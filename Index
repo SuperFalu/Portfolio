@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio Portfolio</title>
+    <link rel="icon" type="img/png" href="immagini/Screenshot__6_-removebg-preview.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="top"></div>
+    <nav class="navbar">
+        <img src="immagini/Screenshot__6_-removebg-preview.png">
+        <ul class="nav-links">
+            <li><a href="#top"><button class="btn1">Home</button></a></li>
+            <li><a href="#About Me"><button class="btn1">About Me</button></a></li>
+            <li><a href="#Skills"><button class="btn1">Skills</button></a></li>
+            <li><a href="#contact"><button class="btn1">Socials</button></a></li>
+            <li><a href="#GIC"><button class="ctn">Get In Touch</button></a></li>
+        </ul>
+        <img src="https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg" alt="" class="menu-btn">
+    </nav>
+
+    <div>
+        <a href="#top"><button class="scroll-btn">↑</button></a>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h2>Tommaso Falusi</h2>
+            <div class="line"></div>
+            <h1>Il mio Portfolio</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- == BIO ==-->
+    <section id="About Me" class="bio">
+        <div class="title">
+            <h1>About Me</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="immagini/img1.jpg" alt="" class="img-centrata">
+                <h4>Text Here</h4>
+                <p align="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="immagini/img2.jpg" alt="" class="img-centrata">
+                <h4>Text Here</h4>
+                <p align="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- == SKILLS == -->
+    <section id="Skills" class="skills">
+        <div class="skills-content">
+            <h1>My Skylls</h1>
+            <div class="line"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- == Socials == -->
+    <section id="contact" class="contact">
+        <div class="row">
+            <div class="col-contact">
+                <h1>Contact</h1>
+                <div class="divisor"></div>
+                <div class="row">
+                    <div class="col">
+                        <img src="immagini/twitter icon2.png" alt="">
+                        <a href="https://twitter.com/tommasofalusii"><button class="btn2">Twitter</button></a>
+                    </div>
+                    <div class="col">
+                        <img src="immagini/insta1.png" alt>
+                        <a href="https://www.instagram.com/tommasofalusi/" target="_blank"><button class="btn2">Instagram</button></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="immagini/tiktok2.png" alt="">
+                        <a href="https://www.tiktok.com/@alessialanza?lang=en" target="_blank"><button class="btn2">TikTok</button></a>
+                    </div>
+                    <div class="col">
+                        <img src="immagini/2021_Facebook_icon.svg.png" alt>
+                        <a href="https://www.facebook.com/tommaso.falusi/" target="_blank"><button class="btn2">FaceBook</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-curriculum">
+                <h1>Curriculum</h1>
+                <div class="line"></div>
+                <div class="row">
+                    <div class="col">
+                        <img src="immagini/cur1.png" alt>
+                        <a href="immagini/Curriculum.pdf" download="Curriculum.pdf" target="_blank"><button class="btn2">Curriculum</button></a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- == Get in Touch == -->
+    <section id="GIC" class="git">
+        <div class="git-content">
+            <div class="title-git">
+                <h1>Get in Touch</h1>
+                <div class="line"></div>
+            </div>
+            <div class="box">
+                <div class="form">
+                    <form action="https://formsubmit.co/tommasofalusi@gmail.com" method="POST" target="_blank">
+                        <h1>Write here if u need</h1>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New email from your website!">
+                        <input type="text" name="First name" placeholder="First Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="Object" placeholder="Object" required>
+                        <textarea name="Message" rows="5" placeholder="Write your message here..."></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="info">
+                    <div class="info-text">
+                        <div class="info-title">
+                            <h1>Contact information</h1>
+                            <p>Feel free to contact us if you need</p>   
+                        </div>                                  
+                        <div class="row-info">
+                            <div class="col-info">
+                                <img src="immagini/phone icon.png">
+                            </div>  
+                            <div class="col-info">
+                                <p>Phone: +39 123 456 7890</p>
+                            </div>                  
+                        </div>
+                        <div class="row-info">
+                            <div class="col-info">
+                                <img src="immagini/mail-icon-op.png">
+                            </div>
+                            <div class="col-info">
+                                <p>Email: tommasofalusi@gmail.com</p>
+                            </div>    
+                        </div>
+                        <div class="row-info">
+                            <div class="col-info">
+                                <img src="immagini/website icon.png">
+                            </div>
+                            <div class="col-info">
+                                <p>Website: dominio.com</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="info-img">
+                        <img src="immagini/contact-form-removebg.png">
+                    </div>
+                </div>  
+            </div> 
+        </div>
+    </section>
+
+    <!-- == FOOTER == -->
+    <section class="footer">
+        <p>This is a footer example for this site | Phone: +39 123-456-7890 | Email: tommasofalusi@gmail.com</p>
+        <p>Tommaso Falusi</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="javascript.js"></script>
+</body>
+</html>
