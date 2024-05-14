@@ -1,0 +1,488 @@
+:root {
+    --primary : #f82056;
+    --secondary: #091126;
+    --third: #f5f5f5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: rgb(248, 32, 86);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgb(248, 32, 86);
+    z-index: 5;
+}
+.navbar img {
+    height: 50px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+.navbar-line {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(248, 32, 86);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.btn1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s; 
+    color: whitesmoke;
+    position: relative;
+    display: inline-block;
+}
+.btn1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;   /* Regola l'altezza della sottolineatura */
+    width: 0;
+    height: 2px;    /* Regola lo spessore della sottolineatura */
+    background-color: red;  /* Regola il colore della sottolineatura */
+    transition: width 0.3s ease;     /* Regola la durata dell'animazione */
+}
+.btn1:hover::after {
+    width: 100%;
+}
+.btn1:hover {
+    color:rgb(248, 32, 86);
+    
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(immagini/basket_wp.jpg);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line {
+    width: 100px;
+    height: 4px;
+    background-color: rgb(248, 32, 86);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background-color: rgb(248, 32, 86);
+    border-radius: 30px;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.3s;
+}
+.ctn:hover {
+    background-color:whitesmoke;
+    color: rgb(248, 32, 86);
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 60px;
+    cursor: pointer;
+    display: none;
+}
+/* BIO */
+section {
+    width: 100%;
+    padding: 80px;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+    margin-bottom: 40px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img {
+    width: 40%;
+}
+.img-centrata {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+}
+p {
+    padding: 0px 40px;
+    margin-bottom: 20px;
+}
+.bio .ctn {
+    margin-top: 5px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+/* SKILLS */
+.skills {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://wallpapers.com/images/hd/classic-matte-black-office-desk-rt7er18c7pjhwx6s.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.skills-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-content .line {
+    margin-bottom: 50px;
+}
+.skills-content h1 {
+    font-size: 7vmin;
+}
+.skills-content p {
+    color: whitesmoke;
+}
+.skills-content .ctn {
+    margin-top: 40px;
+}
+/*CONTACT*/
+.contact {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 80px;
+}
+.contact-background {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+    margin-bottom: 40px;
+}
+.contact .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start ;
+}
+.contact .col-contact {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+    margin-bottom: 40px;
+}
+.contact .col-curriculum {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+.contact .col-contact img {
+    width: 30%;
+    padding: 30px;
+}
+.contact .col-curriculum img {
+    width: 30%;
+    padding: 30px;
+}
+.contact .col-contact .col {
+    padding: 30px;
+}
+.contact .col-curriculum .col {
+    padding: 30px;
+}
+.divisor {
+    width: 1268.8.8px;
+    height: 4px;
+    background-color: rgb(248, 32, 86);
+    border-radius: 5px;
+    margin: 10px;
+    align-items: center;
+}
+.btn2 {
+    background: none;
+    border: 2px solid rgb(248, 32, 86);
+    font-family: 'Goudy Old Style', serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.3s linear;
+    position: relative;
+}
+.btn2:hover {
+    color: white;
+}
+.btn2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 32, 86);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn2::before {
+    transform: scaleX(0);
+}
+.btn2:hover::before {
+    transform: scaleX(1);
+}
+/*Get in Touch*/
+.git {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(145deg, var(--secondary), var(--primary));
+    background-position: center;
+}
+.git-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+.title-git {
+    text-align: center;
+    font-size: 4vmin;
+    color: whitesmoke;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 .2rem .5rem #0006;
+    border-radius: 10px;
+    background-color: transparent;
+    overflow: hidden;
+    height: 550px;
+}
+.info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    background-color: whitesmoke;
+}
+.info-title {
+    margin: 20px 0px;
+}
+.info-text {
+    width: 100%;
+}
+.row-info {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row-info .col-info {
+    text-align: center;
+    color: black;
+}
+
+.col-info img {
+    width: 30px;
+    margin-right: 20px;
+}
+.info-text p {
+    margin: 0;
+    padding: 0;
+}
+.info-img img {
+    width: 200px;
+    height: 200px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500;
+    max-width: 600px;
+    padding: 30px;
+    background: var(--secondary);
+}
+.triangle:not(.not-centered) {
+    position: absolute;
+    margin-left: -428px;
+    margin-top: 60px;
+    width: 0;
+    height: 0;
+    border-top: 1.4rem solid transparent;
+    border-bottom: 1.4rem solid transparent;
+    border-left: 1.4rem solid var(--secondary);
+}
+form h1 {   
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+form input, form textarea, form button {
+    margin: 10px 0;
+    border: 2px solid rgb(248, 32, 86);
+    outline: none;
+    border-radius: 2rem;
+    padding: 20px;
+    font-size: 16px;
+    background-color: unset;
+    color: #fff;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form textarea {
+    resize: none;
+}
+form button {
+    background-color:rgb(248, 32, 86);
+    border: none;
+    width: 120px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color:whitesmoke;
+    color: rgb(248, 32, 86);
+}
+form h1 {
+    margin: 20px;
+    color: rgb(248, 32, 86);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form .row-git {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Footer*/
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: rgb(95, 95, 154);
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px auto;
+}
+
+/* Mobile device */
+@media only screen and (max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-image: url(https://wallpapercave.com/wp/wp2288236.jpg);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 25%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    /*About Me*/
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 5px;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    /*Skills*/
+    .skills-content {
+        width: 100%;
+    }
+} 
+
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url('caminho/del/file/goudyoldstyle.ttf') format('truetype');
+}
